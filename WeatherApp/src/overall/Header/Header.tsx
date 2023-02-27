@@ -16,7 +16,7 @@ function Header() {
         <div className={styles.logo}>
           <img
             src="/pngegg.png"
-            alt="Письма мастера дзен"
+            alt="Лого"
             className={styles.logopng}
           />
         </div>
