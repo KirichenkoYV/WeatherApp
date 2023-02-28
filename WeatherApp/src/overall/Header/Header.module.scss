@@ -1,0 +1,26 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.title {
+    font-size: 40px;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.logopng {
+    height: 60px;
+    width: 60px;
+    margin-right: 20px;
+}
+
+.changeCity {
+    margin-left: 20px;
+}

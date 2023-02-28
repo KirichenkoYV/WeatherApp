@@ -1,0 +1,46 @@
+.presentDay {
+max-width: 400px;
+width: 100%;
+height: 250px;
+background: rgb(145, 145, 145);
+border-radius: 20px;
+padding: 20px;
+letter-spacing: 2px;
+}
+
+.sunPng {
+    height: 119px;
+    width: 119px;
+    padding-right: 30px;
+}
+.topBlock {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.day {
+color: rgb(225, 225, 225);
+// font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 49px;
+}
+.temperature {
+color: rgb(0, 0, 0);
+// font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 96px;
+line-height: 117px;
+}
+.time,.city {
+ color: rgb(255, 255, 255);
+//font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 30px;
+}
