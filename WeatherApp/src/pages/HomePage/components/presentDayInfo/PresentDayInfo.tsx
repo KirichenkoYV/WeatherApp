@@ -51,12 +51,4 @@ function PresentDayInfo() {
 
 export default PresentDayInfo;
 
-{
-  /* <div className={styles.items}>
-<div>
-  <IndicatorsSVG icon_id={item.icon_id}></IndicatorsSVG>
-</div>
-<div>{item.name}</div>
-<div>{item.value}</div>
-</div> */
-}
+

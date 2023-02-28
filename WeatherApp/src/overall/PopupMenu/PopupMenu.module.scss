@@ -1,0 +1,55 @@
+.popup {
+    position: absolute;
+    top: 30%;
+    left: calc(50% - 325px);
+    z-index: 1001;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 650px;
+    width: 100%;
+    height: 250px;
+    background: rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 20px;
+}
+    .items {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        z-index: 2;
+        color: white;
+        margin-bottom: 25px;
+        height: 100%;
+        justify-content: space-evenly;
+    }
+    .blur {
+        position: absolute;
+        z-index: 1000;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.25);
+    }
+    .bottomClose {
+        position: absolute;
+        right: 10px;
+        top :10px;
+        cursor: pointer;
+        svg {
+            transition: 0.3s;
+        }
+        &:hover {
+           svg {
+                transform: rotate(360deg);
+               }
+                }       
+    }
+    .day {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-evenly;
+    }
+    .temp {
+        font-size: 50px;
+    }
