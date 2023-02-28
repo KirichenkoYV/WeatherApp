@@ -3,7 +3,11 @@
 body {
     font: 16px/1.4 'Gill Sans', sans-serif;
     background: #ffffff;
-    max-width: 1200px;
     margin: 0 auto;
-    padding-top: 20px;
+}
+
+.globalConteiner {
+    max-width: 1200px;
+    margin: auto;
+  padding-top: 20px;
 }
