@@ -7,9 +7,12 @@ import "./styles/common.scss";
 import "./styles/index.scss";
 import "./styles/variable.scss";
 import { BrowserRouter } from "react-router-dom";
+import { ThemeProvider } from "./provaider/ThemProvaider";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <BrowserRouter>
-    <App />
+    <ThemeProvider>
+      <App />
+    </ThemeProvider>
   </BrowserRouter>
 );
