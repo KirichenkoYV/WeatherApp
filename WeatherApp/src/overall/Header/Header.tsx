@@ -3,6 +3,8 @@ import GlobalSVGSelector from "../../assets/icons/global/GlobalSVGSelector";
 import Select from "react-select";
 
 import styles from "./Header.module.scss";
+import { useTheme } from "../../Hooks/useThem";
+import { Theme } from "../../context/ThemContext";
 
 function Header() {
   const options = [
@@ -11,10 +13,10 @@ function Header() {
     { value: "vanilla", label: "Пермь" },
   ];
 
-  const [theme, setTheme] = useState("light");
+  const them = useTheme();
 
   function changeTheme() {
-    setTheme(theme === "light" ? "dark" : "light");
+    them.changeThem(them.them === Theme.LIGHT ? Theme.DARK : Theme.LIGHT);
   }
 
   useEffect(() => {
@@ -25,10 +27,10 @@ function Header() {
     components.forEach((component) => {
       root.style.setProperty(
         `--${component}-background-default`,
-        `var(--${component}-background-${theme})`
+        `var(--${component}-background-${them.them})`
       );
     });
-  }, [theme]);
+  }, [them.them]);
 
   return (
     <header className={styles.header}>
