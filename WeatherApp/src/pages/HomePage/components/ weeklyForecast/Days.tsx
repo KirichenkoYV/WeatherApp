@@ -77,7 +77,7 @@ function Days() {
       <Tabs></Tabs>
       <div className={styles.week}>
         {days.map((days) => (
-          <Card days={days}></Card>
+          <Card key={days.day} days={days}></Card>
         ))}
       </div>
     </>

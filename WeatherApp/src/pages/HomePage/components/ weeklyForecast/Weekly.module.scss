@@ -12,7 +12,7 @@
 .week {
     width: 1200px;
     height: 240px;
-    background-color: rgb(145, 145, 145);
+    background-color: var(--components-background-default);
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -26,7 +26,7 @@
 .tab {
   border-radius: 20px;
   padding: 5px 10px;
-  background-color: rgb(145, 145, 145);;
+  background-color: var(--components-background-default);
   color: rgb(0, 0, 0);
   font-size: 15px;
   display: flex;
@@ -39,7 +39,7 @@
 
 .tabCancel {
     border-radius: 20px;
-    background-color: rgb(145, 145, 145);;
+    background-color: var(--components-background-default);
     color: rgb(0, 0, 0);
     font-size: 15px;
     display: flex;
